@@ -18,6 +18,14 @@ Verifiable Terminal provides a user-friendly interface to:
 - **Search Functionality**: Search through agent logs with instant results
 - **Signature Verification**: Verify the authenticity of agent actions through cryptographic signatures
 
+## Screenshots
+
+![Screenshot 1](path/to/screenshot1.png)
+*Description of the first screenshot*
+
+![Screenshot 2](path/to/screenshot2.png)
+*Description of the second screenshot*
+
 ## Getting Started
 
 1. Clone the repository:
@@ -38,8 +46,6 @@ npm install
 yarn install
 # or
 pnpm install
-# or
-bun install
 ```
 
 4. Start the development server:
@@ -49,6 +55,4 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
