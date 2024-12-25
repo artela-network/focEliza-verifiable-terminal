@@ -20,10 +20,10 @@ Verifiable Terminal provides a user-friendly interface to:
 
 ## Screenshots
 
-![Screenshot 1](path/to/screenshot1.png)
+![Screenshot 1](public/screenshot1.png)
 *Description of the first screenshot*
 
-![Screenshot 2](path/to/screenshot2.png)
+![Screenshot 2](public/screenshot2.png)
 *Description of the second screenshot*
 
 ## Getting Started
