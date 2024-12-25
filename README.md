@@ -2,6 +2,8 @@
 
 A web-based terminal interface for interacting with and verifying AI agents running in Trusted Execution Environments (TEE) on focEliza.
 
+Preview: https://foc-eliza-verifiable-terminal.vercel.app/
+
 ## Overview
 
 Verifiable Terminal provides a user-friendly interface to:
@@ -29,30 +31,3 @@ Verifiable Terminal provides a user-friendly interface to:
 ## Getting Started
 
 1. Clone the repository:
-```bash
-git clone https://github.com/artela-network/verifiable-terminal.git
-cd verifiable-terminal
-```
-
-2. Create a `.env` file in the root directory and add the following environment variable:
-```bash
-NEXT_PUBLIC_API_URL=http://...
-```
-
-3. Install dependencies:
-```bash
-npm install
-# or
-yarn install
-# or
-pnpm install
-```
-
-4. Start the development server:
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
