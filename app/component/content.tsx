@@ -347,7 +347,7 @@ const Content = () => {
                         className='w-full md:w-[1100px] mt-4 text-white flex flex-col gap-4 sm:pt-0 px-5 overflow-y-auto font-mono'
                     >
                         <div className='text-[#00FF00] text-[16px] md:text-[18px] flex items-center'>
-                            root@aivinci:~$ ./top_logs.sh
+                            root@verifiable-terminal:~$ ./top_logs.sh
                         </div>
                         {/* <div className='text-[#FFFFFF99] text-[16px] md:text-[18px] flex items-center'>
                             <span ref={el1}>{typedMessage1}</span>
@@ -399,7 +399,7 @@ const Content = () => {
                         }
 
                         <div className='text-[#00FF00] text-[16px] md:text-[18px] flex items-center'>
-                            root@aivinci:~$<span className='animate-[blink_1s_infinite] ml-2'>█</span>
+                            root@verifiable-terminal:~$<span className='animate-[blink_1s_infinite] ml-2'>█</span>
                         </div>
                     </div>
                 </div>
