@@ -1,5 +1,4 @@
-const hostUrl = 'http://35.194.13.183:3389'
-// const hostUrl = 'explore'
+const hostUrl = 'explore'
 
 const getAgentList = async () => {
     try {
