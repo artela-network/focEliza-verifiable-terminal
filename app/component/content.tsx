@@ -2,6 +2,8 @@
 import React, { useState, useRef } from 'react';
 import { IBM_Plex_Sans } from 'next/font/google';
 import Typed from 'typed.js';
+import Image from 'next/image';
+import logo from '@/public/logo.jpeg';
 import { useEffect } from 'react';
 import { getAgentList, getAgentLogs, getAgentAttestation } from '@/app/api';
 import {  useMutation } from '@tanstack/react-query';
@@ -215,7 +217,13 @@ const Content = () => {
     }, []);
 
     return (
-        <div className="w-full bg-[#00002B] relative">
+        <div className="w-full bg-[#00002B] relative pt-24">
+            <div className='absolute top-8 left-[4%] z-40 bg-[#00002B] flex justify-center cursor-pointer font-bold items-center text-white text-[28px] md:text-[56px] py-4'
+                onClick={() => window.open('https://github.com/artela-network/focEliza', '_blank')}
+            >
+               <Image src={logo} alt='logo' width={100} height={100} className="mr-4 rounded-full" />
+               <span className={`${ibmPlexSans.className} font-semibold tracking-wide`}>Verifiable Terminal</span>
+            </div>
             <div
                 className='w-full sm:bg-explore-bg2 bg-[center_top] bg-no-repeat bg-cover'
             >
