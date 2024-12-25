@@ -238,18 +238,6 @@ const Content = () => {
                             >
                                 Verifiable States
                             </div>
-                            <Tooltip color={'#3C3C6E'}  title="Trusted AI agents will drive coin distribution, innovative gameplay, and financial-grade applications">
-                                <div className='h-[46px] gap-2 cursor-pointer p-4 flex justify-center items-center border-[#FFFFFF38] border-1 rounded text-[#FFFFFF80] text-base font-bold whitespace-nowrap'>
-                                    Functionality
-                                    <InfoIcon />
-                                </div>
-                            </Tooltip>
-                            <div className='h-[46px] flex items-center gap-2 cursor-pointer p-4 border-[#FFFFFF38] border-1 rounded text-[#FFFFFF] text-base font-bold whitespace-nowrap'
-                                onClick={() => window.open('https://x.com/Artela_Network', '_blank')}
-                            >
-                                X / Twitter
-                                <JumpIcon />
-                            </div>
                         </div>
                     </div>
 
@@ -317,7 +305,7 @@ const Content = () => {
                                             value={searchQuery}
                                             maxLength={120}
                                             onChange={(e) => setSearchQuery(e.target.value)}
-                                            placeholder="Enter any words or actions of AiVinci that you want to verify"
+                                            placeholder="Enter any words or actions that you want to verify"
                                             className="w-full pr-10 h-[42px] px-4 bg-white text-[#000] rounded focus:outline-none"
                                         />
                                         {searchQuery && (
