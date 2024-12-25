@@ -4,6 +4,8 @@ The web terminal for remote attestation and exploing verifiable logs of the focE
 
 ## Overview
 
+Preview: https://foc-eliza-verifiable-terminal.vercel.app/
+
 Verifiable Terminal provides a user-friendly interface to:
 - Check and verify AI agent logs in real-time
 - Check TEE attestations and verifiable states
