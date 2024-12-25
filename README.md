@@ -26,6 +26,12 @@ git clone https://github.com/artela-network/verifiable-terminal.git
 cd verifiable-terminal
 ```
 
+2. Create a `.env` file in the root directory and add the following environment variable:
+```bash
+NEXT_PUBLIC_API_URL=http://...
+```
+
+3. Install dependencies:
 ```bash
 npm install
 # or
@@ -36,6 +42,7 @@ pnpm install
 bun install
 ```
 
+4. Start the development server:
 ```bash
 npm run dev
 # or
