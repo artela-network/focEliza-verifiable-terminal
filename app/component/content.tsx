@@ -218,27 +218,27 @@ const Content = () => {
 
     return (
         <div className="w-full bg-[#00002B] relative pt-24">
-            <div className='absolute top-8 left-[4%] z-40 bg-[#00002B] flex justify-center cursor-pointer font-bold items-center text-white text-[28px] md:text-[56px] py-4'
+            <div className='absolute top-8 left-[4%] z-40 bg-[#00002B] flex justify-center cursor-pointer font-bold items-center text-white text-[20px] md:text-[40px] py-2'
                 onClick={() => window.open('https://github.com/artela-network/focEliza', '_blank')}
             >
-               <Image src={logo} alt='logo' width={100} height={100} className="mr-4 rounded-full" />
+               <Image src={logo} alt='logo' width={80} height={80} className="mr-4 rounded-full" />
                <span className={`${ibmPlexSans.className} font-semibold tracking-wide`}>Verifiable Terminal</span>
             </div>
             <div
                 className='w-full sm:bg-explore-bg2 bg-[center_top] bg-no-repeat bg-cover'
             >
                 {/* Tabs */}
-                <div className={`flex flex-col border-b border-[#0000c900] w-full transition-all duration-300 ease-in-out ${isExpanded ? 'md:h-[177px] h-[200px] opacity-100' : 'h-0 opacity-0'} justify-center items-center gap-4`}>
+                <div className={`flex flex-col border mb-8 border-[#FFFFFF38] w-full transition-all duration-300 ease-in-out ${isExpanded ? 'md:h-[177px] h-[200px] opacity-100' : 'h-0 opacity-0'} justify-center items-center gap-4`}>
                     <div className='w-[95%] md:w-[84%] flex justify-center items-center gap-4 mt-10 group'>
                         <div className='grid grid-cols-2 md:flex md:flex-nowrap gap-4'>
                             <div
-                                className={`h-[46px] cursor-pointer p-4 flex justify-center items-center border-1 rounded text-white text-base font-bold whitespace-nowrap ${activeTab === 0 ? 'bg-[#0000C9] border-[#0000C9]' : 'border-[#FFFFFF38]'}`}
+                                className={`h-[46px] cursor-pointer flex justify-center items-center border border-solid rounded text-white text-base font-bold whitespace-nowrap px-8 ${activeTab === 0 ? 'bg-[#0000C9] border-[#0000C9] shadow-[0_0_10px_rgba(0,0,201,0.5)]' : 'border-[#FFFFFF38] hover:border-[#0000C9] hover:bg-[#0000C933]'}`}
                                 onClick={() => setActiveTab(0)}
                             >
                                 Verifiable Logs
                             </div>
                             <div
-                                className={`h-[46px] cursor-pointer p-4 flex justify-center items-center border-1 rounded text-white text-base font-bold whitespace-nowrap ${activeTab === 1 ? 'bg-[#0000C9] border-[#0000C9]' : 'border-[#FFFFFF38]'}`}
+                                className={`h-[46px] cursor-pointer flex justify-center items-center border border-solid rounded text-white text-base font-bold whitespace-nowrap px-8 ${activeTab === 1 ? 'bg-[#0000C9] border-[#0000C9] shadow-[0_0_10px_rgba(0,0,201,0.5)]' : 'border-[#FFFFFF38] hover:border-[#0000C9] hover:bg-[#0000C933]'}`}
                                 onClick={() => {
                                     getAgentAttestationQuery.mutate({ agentId: agentList[0].agent_id, publicKey: agentList[0].public_key })
                                     setActiveTab(1)
@@ -248,7 +248,6 @@ const Content = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <div
